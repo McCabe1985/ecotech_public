@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="164.01492mm"
+   height="105.27985mm"
+   viewBox="0 0 164.01492 105.27985"
+   version="1.1"
+   id="svg246"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="chunkbg.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview248"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.71624579"
+     inkscape:cx="343.45752"
+     inkscape:cy="517.28053"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs243" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.749998,-43.589554)">
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       d="M 114.51492,63.16791 62.798507,151.45522"
+       id="path367" />
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       d="M 39.156716,187.65671 153.30224,73.141789"
+       id="path369" />
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       d="M 145.91418,77.574626 96.783582,116.73134"
+       id="path371" />
+    <path
+       id="rect652"
+       style="stroke-width:0.264583"
+       d="M 188.76492,43.589554 V 148.8694 H 24.749998 Z"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>

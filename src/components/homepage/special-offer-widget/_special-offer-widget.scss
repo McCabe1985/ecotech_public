@@ -1,0 +1,20 @@
+@use "../../../styles/utils/" as *;
+
+.special-offer-container {
+  @include flexContainer(column);
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  min-height: 10vh;
+  background-color: black;
+  .special-offer-heading {
+    @include headingFont(white, 1.5rem, 900);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .special-offer-text {
+    @include primaryFont(white, 1.5rem, 900);
+    text-align: center;
+  }
+}

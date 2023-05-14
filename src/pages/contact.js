@@ -1,25 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
-import HeroSection from "../components/homepage/hero-section/HeroSection";
-import SpecialOfferWidget from "../components/homepage/special-offer-widget/SpecialOfferWidget";
-import ServiceSection from "../components/homepage/services-section/ServiceSection";
-import TestimonialsSection from "../components/homepage/testimonials-section/TestimonialsSection";
-import OtherServices from "../components/homepage/other-services-section/OtherServices";
-
-export default function Home() {
+import Contactform from "../components/Contactform";
+export default function contact() {
   return (
     <Layout>
       <main className="main-content-container">
-        <HeroSection />
-        <SpecialOfferWidget />
-        <ServiceSection />
-        <TestimonialsSection />
-        <OtherServices />
+        <Contactform />
       </main>
     </Layout>
   );
 }
-
 export const Head = () => (
   <>
     <meta charSet="UTF-8" />
@@ -27,7 +17,7 @@ export const Head = () => (
 
     <meta
       name="description"
-      content="Professional Window Cleaning services in West Sussex! We handle internals as well as externals, caravans, conservatories, fascias and soffits. "
+      content="Professional Window Cleaning services in West Sussex! We handle internals as well as externals, caravans, conservatories, fascias and soffits.."
     />
     <meta
       name="keywords"
@@ -58,8 +48,9 @@ export const Head = () => (
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#222" />
-    <meta name="theme-color" content="#222" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Window Cleaning services in West Sussex | Ecotech</title>
   </>
 );

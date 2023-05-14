@@ -1,0 +1,99 @@
+@use "../../styles/utils/" as *;
+
+.servicepage-header-container {
+  width: 100%;
+
+  background-color: black;
+  .servicepage-heading {
+    @include headingFont(white, 3rem, 900);
+    text-align: center;
+    margin: 3rem auto;
+  }
+}
+
+.servicepage-section-container {
+  @include flexContainer(row);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+  @include primaryFont(white, 1rem, 900);
+  .servicepage-text-container {
+    padding: 1rem;
+    @include lg {
+      max-width: 50%;
+    }
+    .servicepage-section-heading {
+      @include headingFont(white, 1rem, 900);
+      @include md {
+        font-size: 2rem;
+      }
+      @include lg {
+        font-size: 1rem;
+      }
+    }
+  }
+  .sectionpage-img-container {
+    border: 1rem solid black;
+    @include lg {
+      width: 30%;
+    }
+  }
+  .servicepage-section-text {
+    margin: 0.5rem 0;
+    margin: 1.5rem 0;
+    @include md {
+      font-size: 2rem;
+    }
+    @include lg {
+      font-size: 1rem;
+    }
+  }
+  .servicepage-section-price {
+    @include headingFont(white, 1rem, 900);
+    @include md {
+      font-size: 2rem;
+    }
+    @include lg {
+      font-size: 1rem;
+    }
+  }
+  .servicepage-section-link {
+    display: block;
+    width: 10ch;
+    @include headingFont(black, 1rem, 900);
+    background-color: $accent-clr;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin: 2rem 0;
+    transition: all ease-in-out;
+    cursor: pointer;
+    @include lg {
+      font-size: 1.5rem;
+    }
+    &:focus,
+    &:hover {
+      background-color: white;
+    }
+    @include md {
+      font-size: 2rem;
+    }
+    @include lg {
+      font-size: 1rem;
+    }
+  }
+}
+.img-right {
+  background-image: url("../images/chunkbgreversed.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-left {
+  background-image: url("../images/chunkbgleft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

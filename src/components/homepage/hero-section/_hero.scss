@@ -1,0 +1,79 @@
+@use "../../../styles/utils/" as *;
+
+.hero-container {
+  position: relative;
+  @include flexContainer(row);
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    -45deg,
+    black,
+    #1171f9,
+    black,
+    #00fafe,
+    black,
+    #1171f9,
+    black
+  );
+  @include lg {
+    min-height: 80vh;
+    padding: 0;
+  }
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  .hero-bg-container {
+    @include parallaxBg;
+    .hero-bg-image {
+      width: 100%;
+    }
+  }
+  .hero-text-container {
+    display: none;
+    @include lg {
+      @include flexContainer(column);
+      align-items: flex-start;
+      height: 90%;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+    @include xl {
+      padding: 5%;
+      width: 60%;
+    }
+    .hero-heading {
+      font-family: $heading-font;
+      color: white;
+      text-transform: uppercase;
+      font-size: 3rem;
+      line-height: 1;
+      .emphasis {
+        color: #99c0ff;
+      }
+
+      @include xl {
+        font-size: 3.5rem;
+      }
+    }
+    .hero-heading-subtext {
+      @include primaryFont(white, 1rem, 900);
+      @include md {
+        font-size: 1.5rem;
+      }
+    }
+    .hero-call-to-action-button {
+      @include primaryButton(black, 1.5rem, 900);
+      font-family: $heading-font;
+      margin: 1rem 0;
+      z-index: 2;
+      text-align: center;
+    }
+  }
+  .hero-img {
+    @include md {
+      width: 40%;
+      margin: 3rem;
+    }
+  }
+}

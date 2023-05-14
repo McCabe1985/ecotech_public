@@ -1,0 +1,100 @@
+@use "../../../styles/utils/" as *;
+
+.testimonials-section-container {
+  @include flexContainer(column);
+  width: 100%;
+  padding: 1rem;
+  background-image: url("../images/chunkbgreversed.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .tetimonials-header {
+    width: 100%;
+    align-self: flex-start;
+    @include lg {
+      margin-bottom: 3rem;
+      min-height: 3rem;
+    }
+    .testimonials-heading {
+      position: relative;
+      @include headingFont(white, 1.1rem, 600);
+      text-transform: uppercase;
+      padding: 1rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      line-height: 2;
+      @include md {
+        font-size: 2rem;
+      }
+      @include xl {
+        font-size: 3rem;
+      }
+      &::after {
+        content: "";
+        display: block;
+        bottom: 0;
+        right: 0;
+        width: 95%;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.5rem solid white;
+        @include lg {
+          width: 50%;
+          border-bottom: 1rem solid white;
+        }
+      }
+    }
+  }
+  .testimonials-content-container {
+    @include flexContainer(row);
+    justify-content: space-between;
+    .testimonials-image-container {
+      display: none;
+      @include lg {
+        display: block;
+        width: 45%;
+        height: 50rem;
+        .testimonials-image {
+          margin: auto;
+          height: auto;
+          width: 100;
+        }
+      }
+    }
+    .testimonial-cards-section-container {
+      @include flexContainer(column);
+      align-items: center;
+      justify-content: space-between;
+      @include lg {
+        width: 45%;
+        min-height: 50rem;
+        padding: 3rem;
+      }
+      .testimonial-card-container {
+        @include flexContainer(column);
+        align-items: flex-start;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem auto;
+        .testimonial-card-title {
+          font-family: $heading-font;
+          color: white;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid white;
+          cursor: pointer;
+          &:focus,
+          &:hover {
+            text-decoration: underline;
+            color: $accent-clr;
+          }
+        }
+        .testimonial-card-text {
+          @include primaryFont(white, 1.2rem, 900);
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

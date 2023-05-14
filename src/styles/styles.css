@@ -1,0 +1,1702 @@
+/*
+Colors
+*/
+/*
+Fonts
+*/
+/*
+Font weights
+*/
+/*
+fonts
+*/
+/*
+buttons
+*/
+/*
+Links
+*/
+/*
+Parallax Background
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+select {
+  all: unset;
+}
+
+a {
+  all: unset;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*@font-face {
+    font-family: 'Anton';
+    src: local('Anton'), url("../fonts/AquilineTwo.ttf") format('truetype');
+}*/
+@font-face {
+  font-family: "JosefinSans";
+  src: local("JosefinSans.woff2"), url("./fonts/JosefinSans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RussoOne";
+  src: local("RussoOne.woff2"), url("./fonts/RussoOne.woff2") format("woff2");
+  font-display: swap;
+}
+@keyframes btnSlideRight {
+  0% {
+    transform: translateX(-410px);
+    box-shadow: 0px 0px 5px 1px #ffffff;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0px 0px 5px 1px white;
+  }
+  25% {
+    box-shadow: 0px 0px 12px 4px white;
+  }
+  50% {
+    box-shadow: 0px 0px 16px 7px white;
+  }
+  75% {
+    box-shadow: 0px 0px 12px 4px white;
+  }
+  10% {
+    box-shadow: 0px 0px 5px 1px white;
+  }
+}
+@keyframes hamburgerEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*Scale outwards*/
+@keyframes scaleOutwards {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*slide right animation*/
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*slide down*/
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*animated gradient*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*Wobble*/
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+/*shrink in*/
+@keyframes shrinkIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*Animated border*/
+@keyframes animatedBorder {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #fff;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes servicesBG {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+@keyframes testimonialsBG {
+  0%, 100% {
+    background-color: #111;
+  }
+  25% {
+    background-color: #444;
+  }
+  50% {
+    background-color: #919191;
+  }
+  75% {
+    background-color: #444;
+  }
+}
+.shrink-in {
+  animation: shrinkIn 1s ease 0s 1 normal forwards;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  line-height: 1.5;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+  overflow: hidden;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%, rgb(2, 0, 36) 0%);
+}
+
+.main-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+  background: linear-gradient(-45deg, black, #1171f9, black, #00fafe, black, #1171f9, black);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+@media (min-width: 60rem) {
+  .hero-container {
+    min-height: 80vh;
+    padding: 0;
+  }
+}
+.hero-container .hero-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container .hero-bg-container .hero-bg-image {
+  width: 100%;
+}
+.hero-container .hero-text-container {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .hero-container .hero-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: flex-start;
+    height: 90%;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+}
+@media (min-width: 75rem) {
+  .hero-container .hero-text-container {
+    padding: 5%;
+    width: 60%;
+  }
+}
+.hero-container .hero-text-container .hero-heading {
+  font-family: "RussoOne", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1;
+}
+.hero-container .hero-text-container .hero-heading .emphasis {
+  color: #99c0ff;
+}
+@media (min-width: 75rem) {
+  .hero-container .hero-text-container .hero-heading {
+    font-size: 3.5rem;
+  }
+}
+.hero-container .hero-text-container .hero-heading-subtext {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: left;
+}
+@media (min-width: 45rem) {
+  .hero-container .hero-text-container .hero-heading-subtext {
+    font-size: 1.5rem;
+  }
+}
+.hero-container .hero-text-container .hero-call-to-action-button {
+  color: black;
+  font-family: "JosefinSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: #1080f9;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-family: "RussoOne", sans-serif;
+  margin: 1rem 0;
+  z-index: 2;
+  text-align: center;
+}
+.hero-container .hero-text-container .hero-call-to-action-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 0.5em 1.5em;
+  transform: translateX(-410px);
+  transition: all ease-in-out 2s;
+  z-index: -2;
+}
+.hero-container .hero-text-container .hero-call-to-action-button:hover, .hero-container .hero-text-container .hero-call-to-action-button:focus {
+  animation: shadowPulse linear 3s infinite 0s forwards;
+}
+.hero-container .hero-text-container .hero-call-to-action-button:hover::before, .hero-container .hero-text-container .hero-call-to-action-button:focus::before {
+  width: 100%;
+  height: 100%;
+  animation: btnSlideRight linear 0.5s 0s forwards;
+}
+@media (min-width: 45rem) {
+  .hero-container .hero-img {
+    width: 40%;
+    margin: 3rem;
+  }
+}
+
+.special-offer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  min-height: 10vh;
+  background-color: black;
+}
+.special-offer-container .special-offer-heading {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.special-offer-container .special-offer-text {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  text-align: center;
+}
+
+.services-section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  background-image: url("../images/chunkbg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-section-container .services-heading-container {
+  width: 100%;
+  align-self: flex-start;
+}
+@media (min-width: 60rem) {
+  .services-section-container .services-heading-container {
+    margin-bottom: 3rem;
+    min-height: 3rem;
+  }
+}
+.services-section-container .services-heading-container .services-heading {
+  position: relative;
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 2;
+}
+@media (min-width: 45rem) {
+  .services-section-container .services-heading-container .services-heading {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 75rem) {
+  .services-section-container .services-heading-container .services-heading {
+    font-size: 3rem;
+  }
+}
+.services-section-container .services-heading-container .services-heading::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5rem solid white;
+}
+@media (min-width: 60rem) {
+  .services-section-container .services-heading-container .services-heading::after {
+    width: 50%;
+    border-bottom: 1rem solid white;
+  }
+}
+.services-section-container .services-intro-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 1rem;
+}
+.services-section-container .services-intro-container .services-section-intro-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+@media (min-width: 60rem) {
+  .services-section-container .services-intro-container .services-section-intro-text-container {
+    width: 45%;
+  }
+}
+.services-section-container .services-intro-container .services-section-intro-text-container .services-section-intro-text {
+  position: relative;
+  margin: 1rem 0 0 1rem;
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  text-align: center;
+  line-height: 2;
+}
+@media (min-width: 60rem) {
+  .services-section-container .services-intro-container .services-section-intro-text-container .services-section-intro-text {
+    font-size: 1.2rem;
+  }
+}
+.services-section-container .service-cards-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem auto;
+}
+@media (min-width: 60rem) {
+  .services-section-container .service-cards-container {
+    padding: 3rem 0;
+  }
+}
+.services-section-container .service-cards-container .service-card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  max-width: 25rem;
+  height: 35rem;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0.5rem;
+}
+.services-section-container .service-cards-container .service-card-wrapper .service-card-heading {
+  text-transform: uppercase;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.3rem;
+  align-self: flex-start;
+  color: white;
+  margin: 1rem 0;
+}
+@media (min-width: 60rem) {
+  .services-section-container .service-cards-container .service-card-wrapper .service-card-heading {
+    font-size: 1.5rem;
+  }
+}
+.services-section-container .service-cards-container .service-card-wrapper .service-card-text {
+  width: 100%;
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-align: left;
+  line-height: 2;
+}
+@media (min-width: 45rem) {
+  .services-section-container .service-cards-container .service-card-wrapper .service-card-text {
+    font-size: 1.1rem;
+  }
+}
+.services-section-container .service-cards-container .service-card-wrapper .service-card-link {
+  z-index: 2;
+  color: black;
+  font-family: "JosefinSans";
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: #1080f9;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-family: "RussoOne", sans-serif;
+  align-self: flex-end;
+  margin: 1.5rem;
+}
+.services-section-container .service-cards-container .service-card-wrapper .service-card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 0.5em 1.5em;
+  transform: translateX(-410px);
+  transition: all ease-in-out 2s;
+  z-index: -2;
+}
+.services-section-container .service-cards-container .service-card-wrapper .service-card-link:hover, .services-section-container .service-cards-container .service-card-wrapper .service-card-link:focus {
+  animation: shadowPulse linear 3s infinite 0s forwards;
+}
+.services-section-container .service-cards-container .service-card-wrapper .service-card-link:hover::before, .services-section-container .service-cards-container .service-card-wrapper .service-card-link:focus::before {
+  width: 100%;
+  height: 100%;
+  animation: btnSlideRight linear 0.5s 0s forwards;
+}
+@media (min-width: 60rem) {
+  .services-section-container .service-cards-container .service-card-wrapper .service-card-link {
+    font-size: 1.5rem;
+  }
+}
+
+.service-cards-splash-img {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .service-cards-splash-img {
+    display: block;
+  }
+}
+@media (min-width: 75rem) {
+  .service-cards-splash-img {
+    display: none;
+  }
+}
+
+.other-services-section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  background-image: url("../images/chunkbgleft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.other-services-section-container .other-services-heading-container {
+  width: 100%;
+  align-self: flex-start;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-services-heading-container {
+    margin-bottom: 3rem;
+    min-height: 3rem;
+  }
+}
+.other-services-section-container .other-services-heading-container .other-services-heading {
+  position: relative;
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  line-height: 2;
+}
+@media (min-width: 45rem) {
+  .other-services-section-container .other-services-heading-container .other-services-heading {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 75rem) {
+  .other-services-section-container .other-services-heading-container .other-services-heading {
+    font-size: 3rem;
+  }
+}
+.other-services-section-container .other-services-heading-container .other-services-heading::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5rem solid white;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-services-heading-container .other-services-heading::after {
+    width: 50%;
+    border-bottom: 1rem solid white;
+  }
+}
+.other-services-section-container .other-services-intro-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.other-services-section-container .other-services-intro-container .other-services-section-intro-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-services-intro-container .other-services-section-intro-text-container {
+    width: 45%;
+  }
+}
+.other-services-section-container .other-services-intro-container .other-services-section-intro-text-container .other-services-section-intro-text {
+  position: relative;
+  margin: 1rem 0 0 1rem;
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: left;
+  line-height: 2;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-services-intro-container .other-services-section-intro-text-container .other-services-section-intro-text {
+    font-size: 1.2rem;
+  }
+}
+.other-services-section-container .other-service-cards-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 2rem auto;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-service-cards-container {
+    padding: 3rem 0;
+  }
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  max-width: 25rem;
+  height: 40rem;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0.5rem;
+}
+@media (min-width: 30rem) {
+  .other-services-section-container .other-service-cards-container .other-service-card-wrapper {
+    height: 30rem;
+  }
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-service-cards-container .other-service-card-wrapper {
+    max-width: 30%;
+  }
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-heading {
+  text-transform: uppercase;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.3rem;
+  align-self: flex-start;
+  margin: 1rem 0;
+  color: white;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-heading {
+    font-size: 1.5rem;
+  }
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-text {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-align: left;
+  line-height: 2;
+}
+@media (min-width: 45rem) {
+  .other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-text {
+    font-size: 1.1rem;
+  }
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link {
+  z-index: 2;
+  color: black;
+  font-family: "JosefinSans";
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: #1080f9;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-family: "RussoOne", sans-serif;
+  align-self: flex-end;
+  margin: 1.5rem;
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 0.5em 1.5em;
+  transform: translateX(-410px);
+  transition: all ease-in-out 2s;
+  z-index: -2;
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link:hover, .other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link:focus {
+  animation: shadowPulse linear 3s infinite 0s forwards;
+}
+.other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link:hover::before, .other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link:focus::before {
+  width: 100%;
+  height: 100%;
+  animation: btnSlideRight linear 0.5s 0s forwards;
+}
+@media (min-width: 60rem) {
+  .other-services-section-container .other-service-cards-container .other-service-card-wrapper .other-service-card-link {
+    font-size: 1.5rem;
+  }
+}
+
+.other-service-cards-splash-img {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .other-service-cards-splash-img {
+    display: block;
+  }
+}
+@media (min-width: 75rem) {
+  .other-service-cards-splash-img {
+    display: none;
+  }
+}
+
+.testimonials-section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 1rem;
+  background-image: url("../images/chunkbgreversed.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonials-section-container .tetimonials-header {
+  width: 100%;
+  align-self: flex-start;
+}
+@media (min-width: 60rem) {
+  .testimonials-section-container .tetimonials-header {
+    margin-bottom: 3rem;
+    min-height: 3rem;
+  }
+}
+.testimonials-section-container .tetimonials-header .testimonials-heading {
+  position: relative;
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 2;
+}
+@media (min-width: 45rem) {
+  .testimonials-section-container .tetimonials-header .testimonials-heading {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 75rem) {
+  .testimonials-section-container .tetimonials-header .testimonials-heading {
+    font-size: 3rem;
+  }
+}
+.testimonials-section-container .tetimonials-header .testimonials-heading::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5rem solid white;
+}
+@media (min-width: 60rem) {
+  .testimonials-section-container .tetimonials-header .testimonials-heading::after {
+    width: 50%;
+    border-bottom: 1rem solid white;
+  }
+}
+.testimonials-section-container .testimonials-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+.testimonials-section-container .testimonials-content-container .testimonials-image-container {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .testimonials-section-container .testimonials-content-container .testimonials-image-container {
+    display: block;
+    width: 45%;
+    height: 50rem;
+  }
+  .testimonials-section-container .testimonials-content-container .testimonials-image-container .testimonials-image {
+    margin: auto;
+    height: auto;
+    width: 100;
+  }
+}
+.testimonials-section-container .testimonials-content-container .testimonial-cards-section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 60rem) {
+  .testimonials-section-container .testimonials-content-container .testimonial-cards-section-container {
+    width: 45%;
+    min-height: 50rem;
+    padding: 3rem;
+  }
+}
+.testimonials-section-container .testimonials-content-container .testimonial-cards-section-container .testimonial-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.testimonials-section-container .testimonials-content-container .testimonial-cards-section-container .testimonial-card-container .testimonial-card-title {
+  font-family: "RussoOne", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.testimonials-section-container .testimonials-content-container .testimonial-cards-section-container .testimonial-card-container .testimonial-card-title:focus, .testimonials-section-container .testimonials-content-container .testimonial-cards-section-container .testimonial-card-container .testimonial-card-title:hover {
+  text-decoration: underline;
+  color: #1080f9;
+}
+.testimonials-section-container .testimonials-content-container .testimonial-cards-section-container .testimonial-card-container .testimonial-card-text {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.servicepage-header-container {
+  width: 100%;
+  background-color: black;
+}
+.servicepage-header-container .servicepage-heading {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.servicepage-section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: left;
+}
+.servicepage-section-container .servicepage-text-container {
+  padding: 1rem;
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .servicepage-text-container {
+    max-width: 50%;
+  }
+}
+.servicepage-section-container .servicepage-text-container .servicepage-section-heading {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (min-width: 45rem) {
+  .servicepage-section-container .servicepage-text-container .servicepage-section-heading {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .servicepage-text-container .servicepage-section-heading {
+    font-size: 1rem;
+  }
+}
+.servicepage-section-container .sectionpage-img-container {
+  border: 1rem solid black;
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .sectionpage-img-container {
+    width: 30%;
+  }
+}
+.servicepage-section-container .servicepage-section-text {
+  margin: 0.5rem 0;
+  margin: 1.5rem 0;
+}
+@media (min-width: 45rem) {
+  .servicepage-section-container .servicepage-section-text {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .servicepage-section-text {
+    font-size: 1rem;
+  }
+}
+.servicepage-section-container .servicepage-section-price {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (min-width: 45rem) {
+  .servicepage-section-container .servicepage-section-price {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .servicepage-section-price {
+    font-size: 1rem;
+  }
+}
+.servicepage-section-container .servicepage-section-link {
+  display: block;
+  width: 10ch;
+  color: black;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: #1080f9;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin: 2rem 0;
+  transition: all ease-in-out;
+  cursor: pointer;
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .servicepage-section-link {
+    font-size: 1.5rem;
+  }
+}
+.servicepage-section-container .servicepage-section-link:focus, .servicepage-section-container .servicepage-section-link:hover {
+  background-color: white;
+}
+@media (min-width: 45rem) {
+  .servicepage-section-container .servicepage-section-link {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 60rem) {
+  .servicepage-section-container .servicepage-section-link {
+    font-size: 1rem;
+  }
+}
+
+.img-right {
+  background-image: url("../images/chunkbgreversed.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-left {
+  background-image: url("../images/chunkbgleft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 25rem;
+  margin: 1rem;
+  background-color: white;
+  padding: 1rem;
+}
+@media (min-width: 60rem) {
+  .contact-form {
+    min-width: 50%;
+  }
+}
+.contact-form .form-fields {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 90%;
+  font-size: 0.9rem;
+  margin: 1rem 0rem;
+}
+.contact-form .form-fields .form-heading {
+  font-family: "RussoOne", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+  margin: auto;
+}
+.contact-form .form-fields .form-heading .emphasis {
+  color: #1080f9;
+}
+.contact-form .form-fields .form-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.contact-form .form-fields .form-input {
+  width: 90%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1.5px solid #1080f9;
+  margin-top: 1rem;
+}
+@media (min-width: 60rem) {
+  .contact-form .form-fields .form-input {
+    margin-top: 3rem;
+  }
+}
+.contact-form .form-fields .error {
+  color: red;
+  margin-top: 1rem;
+}
+.contact-form .form-fields .form-message {
+  border: 1.5px solid #1080f9;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+@media (min-width: 60rem) {
+  .contact-form .form-fields .form-message {
+    margin-top: 4rem;
+  }
+}
+.contact-form .form-button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 4rem;
+}
+.contact-form .form-button-container .submit-button {
+  padding: 0.5em 1em;
+  background-color: #1080f9;
+  border-radius: 10px;
+  color: black;
+  font-family: "RussoOne", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 60rem) {
+  .contact-form .form-button-container .submit-button {
+    font-size: 1.3rem;
+  }
+}
+.contact-form .form-button-container .submit-button:focus, .contact-form .form-button-container .submit-button:hover {
+  background-color: #00cffc;
+}
+
+.hero-form-wobble {
+  animation: wobble 0.8s ease 1s 1 normal forwards;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  background: black;
+  padding: 1rem;
+}
+@media (min-width: 60rem) {
+  .nav-container {
+    height: 0;
+    min-height: 20vh;
+  }
+}
+.nav-container .logo-container {
+  width: 30%;
+  cursor: pointer;
+}
+.nav-container .logo-container .logo {
+  width: 100%;
+}
+.nav-container .nav-menu {
+  display: none;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+@media (min-width: 60rem) {
+  .nav-container .nav-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: "RussoOne", sans-serif;
+    text-transform: uppercase;
+  }
+}
+.nav-container .nav-link {
+  color: white;
+  cursor: pointer;
+}
+.nav-container .nav-link:hover {
+  color: #1080f9;
+  text-decoration: underline;
+}
+.nav-container .nav-call-to-action {
+  padding: 0.5em 1em;
+  background-color: #1080f9;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+  z-index: 2;
+}
+.nav-container .nav-call-to-action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  padding: 0.5em 1.5em;
+  transform: translateX(-410px);
+  transition: all ease-in-out 2s;
+  z-index: -1;
+}
+.nav-container .nav-call-to-action:hover, .nav-container .nav-call-to-action:focus {
+  animation: shadowPulse linear 3s infinite 0s forwards;
+}
+.nav-container .nav-call-to-action:hover::before, .nav-container .nav-call-to-action:focus::before {
+  width: 100%;
+  height: 100%;
+  animation: btnSlideRight linear 0.5s 0s forwards;
+}
+
+.hamburger-button {
+  margin-right: 0.5rem;
+}
+@media (min-width: 45rem) {
+  .hamburger-button {
+    height: 5rem;
+    height: 5rem;
+  }
+  .hamburger-button .hamburger {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 60rem) {
+  .hamburger-button {
+    display: none;
+  }
+}
+
+.mobile-nav-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-family: "RussoOne", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 100%;
+}
+@media (min-width: 45rem) {
+  .mobile-nav-container {
+    font-size: 3.5rem;
+  }
+}
+.mobile-nav-container .mobile-nav-item {
+  margin: 1.5rem 0;
+  list-style: none;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-family: "JosefinSans";
+  padding: 1rem;
+}
+.footer-container .footer-sub-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (min-width: 300px) {
+  .footer-container .footer-sub-container {
+    padding-left: 4rem;
+  }
+}
+@media (min-width: 75rem) {
+  .footer-container .footer-sub-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+}
+.footer-container .footer-sub-container .footer-logo-container {
+  margin-bottom: 2rem;
+  width: 60%;
+}
+@media (min-width: 60rem) {
+  .footer-container .footer-sub-container .footer-logo-container {
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.footer-container .footer-sub-container .footer-logo-container .footer-logo {
+  width: 90%;
+  height: auto;
+}
+.footer-container .footer-sub-container .footer-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+@media (min-width: 60rem) {
+  .footer-container .footer-sub-container .footer-item {
+    width: 20%;
+  }
+}
+.footer-container .footer-sub-container .footer-item .footer-subheading {
+  font-family: "RussoOne", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 2rem;
+}
+.footer-container .footer-sub-container .footer-item .footer-link {
+  margin-bottom: 1rem;
+}
+.footer-container .footer-sub-container .footer-item .footer-link:hover {
+  color: #1080f9;
+  text-decoration: underline;
+}
+.footer-container .footer-sub-container .footer-item .footer-contact {
+  margin-bottom: 1rem;
+}
+.footer-container .footer-sub-container .footer-item .footer-contact-subheading {
+  border-bottom: 1px solid white;
+  margin-bottom: 0.5rem;
+}
+.footer-container .footer-sub-container .footer-item .footer-number {
+  cursor: pointer;
+}
+.footer-container .footer-sub-container .footer-item .footer-number:hover {
+  color: #1080f9;
+  text-decoration: underline;
+}
+.footer-container .copyright-text {
+  text-align: center;
+  margin: 0 0.5rem;
+}
+.footer-container span.copyright-text {
+  width: 90%;
+  text-align: center;
+}
+.footer-container .mccabe-link-text {
+  margin: 1rem;
+}
+.footer-container .mccabe-link-text .mccabe-link {
+  color: white;
+  cursor: pointer;
+}
+.footer-container .mccabe-link-text .mccabe-link:hover {
+  color: rgb(165, 165, 194);
+  text-decoration: underline;
+}
+.footer-container .social-media-divider {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+.footer-container .social-link {
+  cursor: pointer;
+  margin: 1rem 1rem 1rem 0;
+}
+.footer-container .social-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.footer-container .mybuilder-icon {
+  height: 2rem;
+  width: auto;
+}
+
+.notfound-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+}
+.notfound-content-container .notfound-heading {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.notfound-content-container .notfound-link {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  cursor: pointer;
+}
+.notfound-content-container .notfound-link:focus, .notfound-content-container .notfound-link:hover {
+  text-decoration: underline;
+}
+
+.success-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+}
+.success-content-container .success-heading {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.success-content-container .success-blurb {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.success-content-container .success-link {
+  color: white;
+  font-family: "JosefinSans";
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: left;
+  cursor: pointer;
+}
+.success-content-container .success-link:focus, .success-content-container .success-link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

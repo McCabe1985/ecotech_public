@@ -1,20 +1,28 @@
 import React from "react";
 import Layout from "../components/Layout";
-import HeroSection from "../components/homepage/hero-section/HeroSection";
-import SpecialOfferWidget from "../components/homepage/special-offer-widget/SpecialOfferWidget";
-import ServiceSection from "../components/homepage/services-section/ServiceSection";
-import TestimonialsSection from "../components/homepage/testimonials-section/TestimonialsSection";
-import OtherServices from "../components/homepage/other-services-section/OtherServices";
+import ServicepageHeaderSection from "../components/servicepage/servicepage-header-section/ServicepageHeaderSection";
+import WindowCleaningSection from "../components/servicepage/window-cleaning-section/WindowCleaningSection";
+import GutterCleaningSection from "../components/servicepage/gutter-cleaning-section/GutterCleaningSection";
+import ConservatoryCleaningSection from "../components/servicepage/conservatory-cleaning-section/ConservatoryCleaningSection";
+import CaravanCleaningSection from "../components/servicepage/caravan-cleaning-section/CaravanCleaningSection";
+import UPVCCleaningSection from "../components/servicepage/upvc-cleaning-section/UPVCCleaningSection";
+import SolarPanelCleaningSection from "../components/servicepage/solarpanel-cleaning-section/SolarPanelCleaningSection";
+import SoffitAndFasciaCleaningSection from "../components/servicepage/soffitandfascia-cleaning-section/SoffitAndFasciaCleaningSection";
+import GreenHouseCleaningSection from "../components/servicepage/greenhouse-cleaning-section/GreenHousecleaningSection";
 
-export default function Home() {
+export default function services() {
   return (
     <Layout>
-      <main className="main-content-container">
-        <HeroSection />
-        <SpecialOfferWidget />
-        <ServiceSection />
-        <TestimonialsSection />
-        <OtherServices />
+      <main className="main-content-container service-main-content-container">
+        <ServicepageHeaderSection />
+        <WindowCleaningSection />
+        <GutterCleaningSection />
+        <ConservatoryCleaningSection />
+        <CaravanCleaningSection />
+        <UPVCCleaningSection />
+        <SolarPanelCleaningSection />
+        <SoffitAndFasciaCleaningSection />
+        <GreenHouseCleaningSection />
       </main>
     </Layout>
   );
